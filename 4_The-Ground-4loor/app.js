@@ -9,3 +9,20 @@ $(document).ready(function(){
     // the response.
   })
 });
+
+var formAnswers = {
+  firstname : $("#firstname").val(),
+  lastname : $("#lastname").val(),
+  email : $("#email").val(),
+  message : $("#message").val()
+}
+
+
+var Tagurl  = "http://x.mirman.org:1031/ground4loor"
+$.post(Tagurl, formAnswers, function(req){
+  console.log(req);
+})
+
+function eraseText() {
+    $(".form-item").val(" ");
+}
