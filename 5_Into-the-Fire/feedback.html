@@ -9,6 +9,7 @@
   <script src="foundation/js/foundation/foundation.topbar.js"></script>
   <script src="foundation/js/foundation/foundation.reveal.js"></script>
   <script src="js/feedback.js"></script>
+
 </head>
 <body>
   <div class="sticky">
@@ -47,13 +48,45 @@
       <h1>Customer Feedback</h1>
     </div>
   </div>
-  <div class="row">
+  <div class="row"\
+
     <div class="small-12 columns" id="feedback-list">
 
     </div>
   </div>
   <div id="addModal" class="reveal-modal" data-reveal role="dialog">
     <h2>Add Feedback</h2>
+    <div class="row">
+      <div class="small-12 columns">
+        <h2 class="subheader">Let us help you make your dream app a reality</h2>
+      </div>
+    </div>
+    <form name="contact-form" id="contact-form">
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <label for="firstname">First Name</label>
+          <input type="text" id="1" class="form-item" name="firstname" required />
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="1" class="form-item" name="lastname" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <label for="email">Email</label>
+          <input type="email" id="1" class="form-item" name="email" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <label for="message">Message</label>
+          <textarea id="1" class="form-item" name="message"></textarea>
+        </div>
+      </div>
+      <div class="row text-center">
+        <input type="submit" value="Submit" onclick="javascript:eraseText();">
+      </div>
     <p>
       We'd love to hear from you!
     </p>
